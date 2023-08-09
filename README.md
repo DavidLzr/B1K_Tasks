@@ -5,3 +5,10 @@ For each task, please replace the original `Rs_int_best.json` of the `Omnigibson
 ```bash
 cp putting_shoes/Rs_int_best.json $(path_to_Omnigibson)/omnigibson/data/og_dataset/scenes/Rs_int/json/Rs_int_best.json
 ```
+
+After setting the correct JSON file, run the B1K task by:
+```python
+python putting_shoes/putting_shoes.py
+# set '--save_data' flag to save the RGB and Depth data of the cameras
+# set '--save_dir' argument to specify the directory to save the data
+```
